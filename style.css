@@ -1,0 +1,107 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0d0d0d, #2a2a2a);
+    color: #e0e0e0;
+    font-family: 'Share Tech Mono', monospace;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    background: rgba(20, 20, 20, 0.85);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    animation: pulse 2s infinite;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  header p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Vape image styling with animation */
+  .vape-image-container {
+    margin-bottom: 20px;
+  }
+  
+  #vape-image {
+    width: 300px;
+    height: auto;
+    border: 3px solid #ff00ff;
+    border-radius: 15px;
+    animation: spin 10s linear infinite, glow 2s ease-in-out infinite alternate;
+  }
+  
+  /* Counter styling */
+  .counter-container h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+  
+  .counter-container p {
+    font-size: 1.1rem;
+  }
+  
+  /* Button styling */
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #00ffff;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 10px #ff00ff; }
+    to { box-shadow: 0 0 30px #ff00ff; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.98); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.98); }
+  }
+  

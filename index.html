@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vape Puff Tracker</title>
+  <!-- Link to our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for a futuristic vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cyber Vape Tracker</h1>
+      <p>Track your 25,000 puffs in real time.</p>
+    </header>
+
+    <main>
+      <div class="vape-image-container">
+        <!-- Replace the src URL with your actual Elfbad Combo Vape image -->
+        <img id="vape-image" src="https://via.placeholder.com/300x300.png?text=Elfbad+Combo+Vape" alt="Elfbad Combo Vape" />
+      </div>
+      <div class="counter-container">
+        <h2 id="puff-count">0</h2>
+        <p>of 25,000 puffs used</p>
+      </div>
+      <button id="add-puff-btn">Add Puff</button>
+    </main>
+
+    <footer>
+      <p>© 2025 Cyber Vape Tracker</p>
+    </footer>
+  </div>
+
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <!-- Firebase Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <!-- Our main JavaScript file -->
+  <script src="main.js"></script>
+</body>
+</html>
